@@ -1,0 +1,17 @@
+{
+  "name": "shuttlepdf",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/courtsite/shuttlepdf",
+  "author": "Courtsite <tech@courtsite.my>",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^1.11.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.3"
+  },
+  "scripts": {
+    "fmt": "prettier --write *.js"
+  }
+}
