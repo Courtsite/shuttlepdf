@@ -32,8 +32,9 @@ exports.pdfByURL = async (req, res) => {
     }
 
     await page.goto(parsedUrl.toString());
+    await page.emulateMedia("screen");
 
-    const pdfBuffer = await page.pdf();
+    const pdfBuffer = await page.pdf({ printBackground: true });
 
     res.set("Content-Type", "application/pdf");
     res.status(200).send(pdfBuffer);
