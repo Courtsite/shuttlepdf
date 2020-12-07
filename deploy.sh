@@ -1,4 +1,9 @@
-gcloud beta functions deploy pdfByURL \
+#!/bin/sh
+
+set +e
+
+gcloud functions deploy pdfByURL \
+    --runtime=nodejs12 \
+    --memory=1024MB \
     --trigger-http \
-    --runtime nodejs8 \
-    --memory 1024MB
+    --timeout=30s
