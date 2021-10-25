@@ -18,7 +18,7 @@
 1. Clone / download a copy of this repository
 2. Run `./deploy.sh`
 3. Enter yes for "Allow unauthenticated invocations of new function" (unless you want to expose your function privately, and in other ways)
-4. Test it out! e.g. https://<region>-<project>.cloudfunctions.net/pdfByURL?url=https://www.bbc.co.uk
+4. Test it out! e.g. `https://<region>-<project>.cloudfunctions.net/pdfByURL?url=https://www.bbc.co.uk`
 
 Update `deploy.sh` to suit your needs (e.g. higher timeouts, different region, more memory, etc).
 
